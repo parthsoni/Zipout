@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>Asana - Checkout</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!--[if lte IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/bxslider.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/selectric.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/adaptive.css" media="screen" />
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+<body class="cart">
+	<header id="header" class="clear">
+		<?php 
+			require('main_menu.php');
+		?>
+	</header>
+	<section class="container">
+		<div class="pageHeader" style="background-image: url(images/content/bg-parallax2.jpg);">
+			<h1>Enroll in a Class</h1>
+		</div>
+		<div class="contentWrap">
+			<div class="checkoutPage clear">
+				<div class="mcell">
+					<p class="form-row form-row-first">
+						<label>First Name</label>
+						<input id="billing_first_name2" class="input-text " type="text" value="" placeholder="" name="billing_first_name2">
+					</p>
+					<p class="form-row form-row-last">
+						<label>Last Name</label>
+						<input id="billing_last_name2" class="input-text " type="text" value="" placeholder="" name="billing_last_name2">
+					</p>
+					<div class="clear"></div>
+					<p class="form-row form-row-wide">
+						<label class="" for="billing_company2">Company Name</label>
+						<input id="billing_company2" class="input-text " type="text" value="" placeholder="" name="billing_company2">
+					</p>
+					<p class="form-row form-row-first">
+						<label class="" for="billing_email">Email Address</label>
+						<input id="billing_email" class="input-text " type="text" value="" placeholder="" name="billing_email">
+					</p>
+					<p class="form-row form-row-last">
+						<label class="" for="billing_phone">Phone</label>
+						<input id="billing_phone" class="input-text " type="text" value="" placeholder="" name="billing_phone">
+					</p>
+					<p class="form-row form-row-wide">
+						<label class="" for="billing_city_2">Town / City</label>
+						<input id="billing_city_2" class="input-text " type="text" value="" placeholder="Town / City" name="billing_city_2">
+					</p>
+					<input class="checkoutBtn" type="submit" value="Submit">
+				</div>
+		</div>
+		
+	</section>
+	<?php
+		require('main_footer.php');
+	?>
+</body>
+</html>
